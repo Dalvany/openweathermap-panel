@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { FormField, PanelOptionsGroup } from '@grafana/ui';
+import { FormField, PanelOptionsGroup, Switch } from '@grafana/ui';
 import { PanelEditorProps, SelectableValue } from '@grafana/data';
 
 import { WeatherMapOptions } from './types';
@@ -15,6 +15,10 @@ export class WeatherMapEditor extends PureComponent<PanelEditorProps<WeatherMapO
 
   onLonChange = ({ target }: any) => {
     this.props.onOptionsChange({ ...this.props.options, lon: target.value });
+  };
+
+  onWheelZoomingChange = ({ target }: any) => {
+    this.props.onOptionsChange({ ...this.props.options, wheelZooming: !this.props.options.wheelZooming })
   };
 
   render() {
@@ -50,6 +54,11 @@ export class WeatherMapEditor extends PureComponent<PanelEditorProps<WeatherMapO
           type="number"
           onChange={this.onLonChange}
           value={options.lon} />
+        <Switch label="Wheel zoom"
+          labelClass="width-9"
+          tooltip="Allow to disable mouse wheel zooming"
+          checked={options.wheelZooming}
+          onChange={this.onWheelZoomingChange} />
       </PanelOptionsGroup>
     );
   }

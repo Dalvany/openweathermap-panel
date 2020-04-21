@@ -47,6 +47,7 @@ export class WeatherMapPanel extends PureComponent<Props> {
         <Map zoom={options.zoomLevel}
           center={position}
           style={{ height: height, width: width }}
+          scrollWheelZoom={options.wheelZooming}
         >
           <TileLayer
             url={url}
