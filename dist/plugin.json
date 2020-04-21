@@ -20,7 +20,7 @@
       {"name": "Screenshots", "path": "https://github.com/Dalvany/openweathermap-panel/raw/master/src/images/screenshot.png"}
     ],
     "version": "1.0.0",
-    "updated": "2020-04-20"
+    "updated": "2020-04-21"
   },
 
   "dependencies": {

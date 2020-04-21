@@ -20,7 +20,7 @@ For docker, use GF_INSTALL_PLUGINS environment, eg : `GF_INSTALL_PLUGINS: https:
 # TODO
 
 -   start zoom level configurable
--   try to save in options the layer displayed -> baselayerchange ?
+-   configure starting layer
 -   display color legend for each openweathermap layers ?
 -   configure what layers are available ?
 

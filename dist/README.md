@@ -1,6 +1,6 @@
 # OpenWeatherMap grafana panel
 
-Panel displaying [CartoDB](https://carto.com/attribution) maps using [weathermap api v1](https://openweathermap.org/api/weathermaps).  
+Panel displaying [CartoDB](https://carto.com/attribution) maps and OpenWeatherMap's maps using [weathermap api v1](https://openweathermap.org/api/weathermaps).  
 It requires an API key.
 
 # Configuration
@@ -20,8 +20,8 @@ For docker, use GF_INSTALL_PLUGINS environment, eg : `GF_INSTALL_PLUGINS: https:
 # TODO
 
 -   start zoom level configurable
--   try to save in options the layer displayed -> baselayerchange ?
--   display color legend for each openweathermap layers_icon ?
+-   configure starting layer
+-   display color legend for each openweathermap layers ?
 -   configure what layers are available ?
 
 # Credits

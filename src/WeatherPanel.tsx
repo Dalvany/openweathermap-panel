@@ -21,6 +21,7 @@ const layers = [
 interface Props extends PanelProps<WeatherMapOptions> { }
 
 export class WeatherMapPanel extends PureComponent<Props> {
+
   isBlank(str) {
     return (!str || /^\s*$/.test(str));
   }
@@ -43,7 +44,10 @@ export class WeatherMapPanel extends PureComponent<Props> {
 
     return (
       <div id={'mapid_' + id} className="mapcontainer" style={{ height: height, width: width }}>
-        <Map zoom={options.zoomLevel} center={position} style={{ height: height, width: width }}>
+        <Map zoom={options.zoomLevel}
+          center={position}
+          style={{ height: height, width: width }}
+        >
           <TileLayer
             url={url}
             attribution="&copy; <a href=&quot;http://www.openstreetmap.org/copyright&quot;>OpenStreetMap</a> &copy; <a href=&quot;http://cartodb.com/attributions&quot;>CartoDB</a>"
