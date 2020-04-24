@@ -7,6 +7,7 @@ It requires an API key.
 
 -   API key : OpenWeatherMap API apiKey
 -   lat, lon : coordinate where the panel point when loaded
+-   wheel zoom : allow to enable/disable mouse wheel zooming on the map
 
 # Installation
 
