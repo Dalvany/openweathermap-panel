@@ -52,6 +52,8 @@ export class WeatherMapPanel extends PureComponent<Props> {
           <TileLayer
             url={url}
             attribution="&copy; <a href=&quot;http://www.openstreetmap.org/copyright&quot;>OpenStreetMap</a> &copy; <a href=&quot;http://cartodb.com/attributions&quot;>CartoDB</a>"
+            reuseTiles={true}
+            detectRetina={true}
           />
           <LayersControl position="topright">
             {layers.map((layer) => {
@@ -60,7 +62,6 @@ export class WeatherMapPanel extends PureComponent<Props> {
                   <TileLayer
                     url="https://tile.openweathermap.org/map/{layerType}/{z}/{x}/{y}.png?appid={apiKey}"
                     attribution="&copy; <a href=&quot;https://openweathermap.org&quot;>OpenWeatherMap</a>"
-                    reuseTiles={true}
                     detectRetina={true}
                     apiKey={options.apiKey}
                     layerType={layer.type}
