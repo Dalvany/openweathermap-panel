@@ -19,12 +19,12 @@
     "screenshots": [
       {"name": "Screenshots", "path": "https://github.com/Dalvany/openweathermap-panel/raw/master/src/images/screenshot.png"}
     ],
-    "version": "1.0.0",
-    "updated": "2020-04-21"
+    "version": "2.0.0",
+    "updated": "2020-05-21"
   },
 
   "dependencies": {
-    "grafanaVersion": "6.x.x",
+    "grafanaVersion": "7.x.x",
     "plugins": [ ]
   }
 }
