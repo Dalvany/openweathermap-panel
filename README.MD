@@ -12,7 +12,7 @@ It requires an API key.
 # Installation
 
 Download the latest release, unzip in grafana plugin directory and rename the folder dalvany-openweathermap-panel.  
-For docker, use GF_INSTALL_PLUGINS environment, eg : `GF_INSTALL_PLUGINS: https://github.com/Dalvany/openweathermap-panel/archive/v1.0.0.zip;dalvany-openweathermap-panel`
+For docker, use GF_INSTALL_PLUGINS environment, eg : `GF_INSTALL_PLUGINS: https://github.com/Dalvany/openweathermap-panel/archive/v2.0.0.zip;dalvany-openweathermap-panel`
 
 # Screenshot
 
