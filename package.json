@@ -1,6 +1,6 @@
 {
   "name": "dalvany-openweathermap-panel",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Display OpenWeatherMap's maps",
   "scripts": {
     "build": "grafana-toolkit plugin:build",
